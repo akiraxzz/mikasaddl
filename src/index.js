@@ -46,7 +46,7 @@ function showLoading(show = true) {
 
 showLoading(true);
 
-fetch('https://gist.githubusercontent.com/akiraxzz/b2bf2fbcf5b92e9219d43096ab7ed1c9/raw/1b2d38900ae8526e8282c80236da29a2f1a097b5/downloads.json')
+fetch('https://gist.githubusercontent.com/akiraxzz/b2bf2fbcf5b92e9219d43096ab7ed1c9/raw/c09c2a0819291e24103c16e84671c83359e91294/downloads.json')
   .then(res => res.json())
   .then(downloads => {
     const ids = Object.keys(downloads);
