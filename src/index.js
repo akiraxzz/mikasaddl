@@ -1,6 +1,7 @@
 // src/index.js
 import './style.css';
 
+
 const animeList = document.getElementById('animeList');
 const searchInput = document.getElementById('searchInput');
 const loadingEl = document.getElementById('loading');
