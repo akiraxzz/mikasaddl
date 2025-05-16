@@ -28,7 +28,7 @@ function renderAnimeList(animes) {
     return;
   }
 
-  animes.slice(0, 8).forEach(({ anime, linkDownload }) => {
+  animes.slice(0, 20).forEach(({ anime, linkDownload }) => {
     const animeCard = document.createElement('div');
     animeCard.classList.add('anime-card');
     animeCard.innerHTML = `
