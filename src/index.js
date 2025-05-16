@@ -24,7 +24,7 @@ function renderAnimeList(animes) {
   animeList.innerHTML = "";
 
   if (animes.length === 0) {
-    animeList.innerHTML = "<p>Tidak ada anime dengan link download.</p>";
+    animeList.innerHTML = "<p>Loading data...</p>";
     return;
   }
 
@@ -42,6 +42,7 @@ function renderAnimeList(animes) {
         </div>
         <a href="${linkDownload}" target="_blank" class="download-btn">Download</a>
       </div>
+      <div>
     `;
     animeList.appendChild(animeCard);
   });
