@@ -26,7 +26,7 @@ function renderAnimeList(animes) {
         <div class="status-tag">${anime.status || 'Unknown'}</div>
         <div class="title">${anime.title}</div>
         <div class="ratings">
-          <span>★ ${anime.score || '-'}  &nbsp; • ${anime.episodes || '?'} Episodes</span>
+          <span> ID: ${anime.mal_id} &nbsp; &nbsp; &nbsp;★ ${anime.score || '-'}  &nbsp; • ${anime.episodes || '?'} Eps</span>
         </div>
         <div class="genre-tags">
           ${anime.genres.slice(0, 2).map(g => `<div class="genre-tag">${g.name}</div>`).join('')}
@@ -46,7 +46,7 @@ function showLoading(show = true) {
 
 showLoading(true);
 
-fetch('https://gist.githubusercontent.com/akiraxzz/b2bf2fbcf5b92e9219d43096ab7ed1c9/raw/a8b59178fcd7d0f03915654d2266d1feaaf0f19c/downloads.json')
+fetch('https://gist.githubusercontent.com/akiraxzz/b2bf2fbcf5b92e9219d43096ab7ed1c9/raw/1b2d38900ae8526e8282c80236da29a2f1a097b5/downloads.json')
   .then(res => res.json())
   .then(downloads => {
     const ids = Object.keys(downloads);
